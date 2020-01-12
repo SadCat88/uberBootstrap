@@ -67,8 +67,10 @@
 
 .header .sub-header {
   min-height: 75px;
+  width: 100%;
   background-color: rgba(33, 33, 33, 0.7);
-  padding-top: 10px; }
+  padding-top: 10px;
+  position: absolute; }
   .header .sub-header .logotype {
     margin-top: 2px; }
     .header .sub-header .logotype .logotype__img {
@@ -94,7 +96,9 @@
     margin-top: 5px; }
 
 .promo {
-  padding-top: 43px; }
+  padding-top: 118px;
+  padding-bottom: 120px;
+  background: url("../../components/promo/img/bgImage.jpg"); }
   .promo .promo__heading {
     text-transform: uppercase;
     text-align: center;

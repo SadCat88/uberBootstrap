@@ -33,8 +33,11 @@
 
     .sub-header {
         min-height: 75px;
+        width: 100%;
         background-color: transparentize($mainColor, 0.3);
         padding-top: 10px;
+
+        position: absolute;
 
         .logotype {
             // margin-left: 75px;
@@ -83,7 +86,9 @@
 }
 
 .promo {
-    padding-top: 43px;
+    padding-top: 118px;
+    padding-bottom: 120px;
+    background: url("../../components/promo/img/bgImage.jpg");
 
     .promo__heading {
         text-transform: uppercase;
