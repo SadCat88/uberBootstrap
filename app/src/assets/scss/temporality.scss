@@ -1,0 +1,40 @@
+// ↓ временная зона ================================================
+// обводка и ось симметрии 
+
+header {
+    outline: 5px dashed rgba(166, 168, 1, 0.5);
+    outline-offset: -5px;
+}
+
+main {
+    outline: 5px dashed rgba(0, 153, 255, 0.5);
+    outline-offset: -5px;
+}
+
+footer {
+    outline: 5px dashed rgba(255, 0, 234, 0.5);
+    outline-offset: -5px;
+}
+
+section {
+    outline: 2px dashed rgba(255, 62, 40, 0.5);
+    outline-offset: -15px;
+}
+
+.wrapper {
+    outline: 2px dotted purple;
+    outline-offset: -2px;
+
+    &::before {
+        content: '';
+        width: 2px;
+        height: 2000px;
+        background-color: purple;
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        transform: translate(-50%, -500px);
+    }
+}
+
+// ↑ временная зона ================================================

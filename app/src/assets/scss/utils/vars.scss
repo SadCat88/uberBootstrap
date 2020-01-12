@@ -1,0 +1,47 @@
+// === для подключения переменных и расширений
+// =============================================================================
+
+// ↓ variables =================================================================
+// for example:
+// $mainColor   : #ff0000;
+// to use: color: $mainColor;
+
+// === colors
+$mainColor: #212121;
+
+$mainFontColor: #ffffff;
+
+$buttonGradientMain: #1eacc7;
+$buttonGradientSecond: #4ce2ff;
+
+// ↑ variables =================================================================
+
+// ↓ extends ===================================================================
+// to use: @extend .a11y;
+
+// === accessability
+.a11y {
+    outline: none;
+    box-shadow:
+        0 0 0 2px $mainColor,
+        0 0 0 4px darken($mainColor, 10%);
+    z-index: 20;
+
+}
+
+// === ↓ fonts
+// 
+// === main font
+.main-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.4;
+    text-transform: none;
+    color: $mainFontColor;
+}
+
+// === ↑ fonts
+
+// ↑ extends ===================================================================

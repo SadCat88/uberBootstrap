@@ -1,0 +1,118 @@
+@import '../../assets/scss/utils/vars.scss';
+@import '../../components/button/button.scss';
+
+.container {
+    width: 1070px;
+}
+
+.header {
+
+    .header-navigation {
+        background-color: $mainColor;
+
+        .main-menu {
+            display: flex;
+            justify-content: space-around;
+            min-height: 50px;
+            padding: 10px 38px 0;
+
+
+            .main-menu__item {
+                flex-grow: 1;
+                text-align: center;
+
+                line-height: 30px;
+
+                &:not(:last-child) {
+                    height: 30px;
+                    border-right: 2px dotted #000000;
+                }
+            }
+        }
+    }
+
+    .sub-header {
+        min-height: 75px;
+        background-color: transparentize($mainColor, 0.3);
+        padding-top: 10px;
+
+        .logotype {
+            // margin-left: 75px;
+
+            margin-top: 2px;
+
+            .logotype__img {
+                width: 260px;
+                height: 28px;
+                margin-bottom: 2px;
+            }
+
+            .logotype__description {
+
+                font-size: 12px;
+                font-weight: 100;
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .call-back {
+
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .call-back__description {
+                font-size: 11px;
+                font-weight: 300;
+            }
+
+            .call-back__phone-number {
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+
+        }
+
+        .call-back__request-call {
+            margin-top: 5px;
+
+        }
+    }
+}
+
+.promo {
+    padding-top: 43px;
+
+    .promo__heading {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 52px;
+        font-weight: 900;
+    }
+
+    .promo__offer {
+        margin-bottom: 17px;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        font-weight: 700;
+    }
+
+    .promo__description {
+        margin-bottom: 110px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.33;
+        text-align: center;
+    }
+
+    .promo__send-request {
+        height: 60px;
+
+        font-size: 17px;
+    }
+}

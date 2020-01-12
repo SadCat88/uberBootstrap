@@ -1,0 +1,56 @@
+// для базовой стилизации страниц
+// =============================================================================
+
+@import 'utils/vars.scss';
+@import 'utils/fonts.scss';
+// @import './main.scss';
+
+body {
+    @extend .main-font;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    // TODO: background-color: $mainColor;
+    background-color: gray;
+    min-height: 100vh;
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    color: $mainFontColor;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        color: $buttonGradientSecond;
+    }
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p,
+fieldset,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+}

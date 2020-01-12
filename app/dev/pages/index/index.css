@@ -1,0 +1,118 @@
+.a11y {
+  outline: none;
+  box-shadow: 0 0 0 2px #212121, 0 0 0 4px #080808;
+  z-index: 20; }
+
+.main-font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: none;
+  color: #ffffff; }
+
+.a11y {
+  outline: none;
+  box-shadow: 0 0 0 2px #212121, 0 0 0 4px #080808;
+  z-index: 20; }
+
+.main-font {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: none;
+  color: #ffffff; }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  padding-top: 2px;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); }
+  .button:hover {
+    text-decoration: none;
+    color: #ffffff; }
+  .button.button_main {
+    box-shadow: inset 0px -3px 2px 0 rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+    border-radius: 6px; }
+    .button.button_main:hover {
+      background-image: linear-gradient(to top, #17869b, #00d5ff); }
+
+.container {
+  width: 1070px; }
+
+.header .header-navigation {
+  background-color: #212121; }
+  .header .header-navigation .main-menu {
+    display: flex;
+    justify-content: space-around;
+    min-height: 50px;
+    padding: 10px 38px 0; }
+    .header .header-navigation .main-menu .main-menu__item {
+      flex-grow: 1;
+      text-align: center;
+      line-height: 30px; }
+      .header .header-navigation .main-menu .main-menu__item:not(:last-child) {
+        height: 30px;
+        border-right: 2px dotted #000000; }
+
+.header .sub-header {
+  min-height: 75px;
+  background-color: rgba(33, 33, 33, 0.7);
+  padding-top: 10px; }
+  .header .sub-header .logotype {
+    margin-top: 2px; }
+    .header .sub-header .logotype .logotype__img {
+      width: 260px;
+      height: 28px;
+      margin-bottom: 2px; }
+    .header .sub-header .logotype .logotype__description {
+      font-size: 12px;
+      font-weight: 100;
+      color: rgba(255, 255, 255, 0.5); }
+  .header .sub-header .call-back {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    .header .sub-header .call-back .call-back__description {
+      font-size: 11px;
+      font-weight: 300; }
+    .header .sub-header .call-back .call-back__phone-number {
+      font-size: 20px;
+      font-weight: normal; }
+  .header .sub-header .call-back__request-call {
+    margin-top: 5px; }
+
+.promo {
+  padding-top: 43px; }
+  .promo .promo__heading {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 900; }
+  .promo .promo__offer {
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700; }
+  .promo .promo__description {
+    margin-bottom: 110px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33;
+    text-align: center; }
+  .promo .promo__send-request {
+    height: 60px;
+    font-size: 17px; }
