@@ -1,0 +1,9 @@
+mixin item(data)
+  .item.col-6
+    .row
+      .col-3
+        .item__icon
+          img.item__icon-img(src=`${data.img}` alt=`${data.alt}`)
+      .col-9
+        span.item__heading=`${data.heading}`
+        span.item__description=`${data.description}`

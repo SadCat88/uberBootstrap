@@ -1,7 +1,7 @@
-# Carousel
+# UBER Partners
 
 **GitHub Pages:**<br>
-https://sadcat88.github.io/carousel/app/public/<br>
+https://sadcat88.github.io/uberBootstrap/app/public/<br>
 
 ## Описание
 
@@ -10,10 +10,12 @@ https://sadcat88.github.io/carousel/app/public/<br>
 - Сборка проекта через Gulp
 - HTML через Pug
 - CSS через SCSS
-- Vanilla JavaScript
-- JSDoc
+<!-- - Vanilla JavaScript -->
+<!-- - JSDoc -->
+- Bootstrap
 - Git (спасибо, Кэп)
 
-**JSDoc**<br>
+<!-- **JSDoc**<br>
 Доступна документация по некоторым JavaScript методам<br>
-https://sadcat88.github.io/carousel/docs/gen/index.html
+https://sadcat88.github.io/uberBootstrap/docs/gen/index.html
+ -->

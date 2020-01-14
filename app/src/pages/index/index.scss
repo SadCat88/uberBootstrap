@@ -2,7 +2,7 @@
 @import '../../components/button/button.scss';
 
 .container {
-    width: 1070px;
+    // width: 1070px;
 }
 
 .header {
@@ -86,9 +86,9 @@
 }
 
 .promo {
-    padding-top: 118px;
-    padding-bottom: 120px;
-    background: url("../../components/promo/img/bgImage.jpg");
+    padding-top: 140px;
+    padding-bottom: 130px;
+    background: url("../../components/promo/img/bgImage.jpg") center center/cover no-repeat;
 
     .promo__heading {
         text-transform: uppercase;
@@ -108,7 +108,7 @@
     }
 
     .promo__description {
-        margin-bottom: 110px;
+        margin-bottom: 170px;
         font-size: 16px;
         font-weight: normal;
         line-height: 1.33;
@@ -121,3 +121,113 @@
         font-size: 17px;
     }
 }
+
+.section-name {
+    height: 24px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+    border-radius: 4px;
+
+    &.section-name_black {
+        color: $secondColor;
+
+        background-color: $mainColor;
+    }
+}
+
+.section-heading {
+    width: 100%;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+
+    &.section-heading_black {
+        color: $mainColor;
+    }
+}
+
+
+.advantages {
+    color: $mainColor;
+
+    background-color: $secondColor;
+
+    .item-w {
+        margin-bottom: 30px;
+    }
+
+    .item {
+        padding-top: 5px;
+
+        .item__icon {
+            width: 113px;
+            height: 113px;
+            margin-top: 10px;
+
+            background-color: $specialColorMain;
+            border-radius: 50%;
+
+            .item__icon-img {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .item__heading {
+            width: 341px;
+            display: block;
+
+            font-size: 17px;
+            font-weight: normal;
+            color: $specialColorMain;
+            text-align: left;
+        }
+
+        .item__description {
+            width: 346px;
+            display: block;
+
+            font-size: 15px;
+            font-weight: 300;
+            text-align: justify;
+        }
+    }
+}
+
+.section {
+    padding: 70px 0 0 0;
+
+    .section-name {
+        margin-bottom: 30px;
+    }
+
+    .section-heading {
+        margin-bottom: 17px;
+    }
+}
+
+// background: url("../../assets/img/road.jpg") center center/cover no-repeat;
+
+// .container {
+
+//     background-color: rgb(224, 131, 131);
+
+//     .row {
+
+//         background-color: rgb(153, 224, 131);
+
+//         [class|="col"] {
+//             outline: 1px dashed blue;
+//             outline-offset: -1px;
+//         }
+//     }
+// }

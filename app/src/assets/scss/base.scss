@@ -28,12 +28,12 @@ h6 {
 }
 
 a {
-    color: $mainFontColor;
+    color: $secondColor;
     text-decoration: none;
 
     &:hover {
         text-decoration: none;
-        color: $buttonGradientSecond;
+        color: $specialColorSecond;
     }
 }
 

@@ -8,11 +8,10 @@
 
 // === colors
 $mainColor: #212121;
+$secondColor: #ffffff;
 
-$mainFontColor: #ffffff;
-
-$buttonGradientMain: #1eacc7;
-$buttonGradientSecond: #4ce2ff;
+$specialColorMain: #1eacc7;
+$specialColorSecond: #4ce2ff;
 
 // ↑ variables =================================================================
 
@@ -39,7 +38,7 @@ $buttonGradientSecond: #4ce2ff;
     font-size: 14px;
     line-height: 1.4;
     text-transform: none;
-    color: $mainFontColor;
+    color: $secondColor;
 }
 
 // === ↑ fonts

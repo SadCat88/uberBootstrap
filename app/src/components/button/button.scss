@@ -15,20 +15,20 @@
 
     &:hover {
         text-decoration: none;
-        color: $mainFontColor;
+        color: $secondColor;
     }
 
     &.button_main {
         box-shadow: inset 0px -3px 2px 0 rgba(0, 0, 0, 0.12);
         background-image: linear-gradient(to top,
-                $buttonGradientMain,
-                $buttonGradientSecond);
+                $specialColorMain,
+                $specialColorSecond);
         border-radius: 6px;
 
         &:hover {
             background-image: linear-gradient(to top,
-                    darken($buttonGradientMain, 10),
-                    darken($buttonGradientSecond, 15));
+                    darken($specialColorMain, 10),
+                    darken($specialColorSecond, 15));
         }
     }
 }
