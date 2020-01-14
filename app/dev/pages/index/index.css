@@ -118,62 +118,116 @@
     height: 60px;
     font-size: 17px; }
 
-.section-name {
-  height: 24px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 4px; }
-  .section-name.section-name_black {
-    color: #ffffff;
-    background-color: #212121; }
+.advantages .item {
+  padding-top: 5px;
+  padding-bottom: 30px; }
+  .advantages .item .item__icon {
+    width: 113px;
+    height: 113px;
+    margin-top: 10px;
+    background-color: #1eacc7;
+    border-radius: 50%; }
+    .advantages .item .item__icon .item__icon-img {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .advantages .item .item__heading {
+    width: 341px;
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #1eacc7;
+    text-align: left; }
+  .advantages .item .item__description {
+    width: 346px;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify; }
 
-.section-heading {
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 38px;
-  font-weight: bold; }
-  .section-heading.section-heading_black {
-    color: #212121; }
-
-.advantages {
-  color: #212121;
-  background-color: #ffffff; }
-  .advantages .item-w {
-    margin-bottom: 30px; }
-  .advantages .item {
-    padding-top: 5px; }
-    .advantages .item .item__icon {
-      width: 113px;
-      height: 113px;
-      margin-top: 10px;
-      background-color: #1eacc7;
-      border-radius: 50%; }
-      .advantages .item .item__icon .item__icon-img {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
-    .advantages .item .item__heading {
-      width: 341px;
-      display: block;
-      font-size: 17px;
+.mobile-app {
+  background: linear-gradient(to top, rgba(80, 80, 80, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/img/road.jpg") center center/cover no-repeat; }
+  .mobile-app .card {
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 280px;
+    padding: 90px 20px 0;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center/cover;
+    background-color: rgba(59, 59, 72, 0.9);
+    background-blend-mode: multiply; }
+    .mobile-app .card .card__heading {
+      font-size: 24px;
       font-weight: normal;
-      color: #1eacc7;
-      text-align: left; }
-    .advantages .item .item__description {
-      width: 346px;
-      display: block;
-      font-size: 15px;
-      font-weight: 300;
-      text-align: justify; }
+      line-height: 1.29;
+      text-align: center;
+      text-transform: uppercase; }
+      .mobile-app .card .card__heading::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 35px;
+        transform: translate(-50%);
+        display: block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #000000; }
+      .mobile-app .card .card__heading::after {
+        content: "+";
+        position: absolute;
+        left: 50%;
+        bottom: 35px;
+        transform: translate(-50%);
+        line-height: 27px;
+        color: #1eacc7;
+        font-size: 30px;
+        font-weight: 400; }
 
 .section {
-  padding: 70px 0 0 0; }
+  padding: 70px 0 40px 0; }
   .section .section-name {
-    margin-bottom: 30px; }
+    height: 24px;
+    margin-bottom: 30px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 4px; }
   .section .section-heading {
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold; }
+  .section .section-subheading {
+    margin-top: -15px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center; }
+  .section.section_white {
+    color: #212121;
+    background-color: #ffffff; }
+    .section.section_white .section-name {
+      color: #ffffff;
+      background-color: #212121; }
+    .section.section_white .section-heading {
+      color: #212121; }
+    .section.section_white .section-subheading {
+      color: #212121; }
+  .section.section_black {
+    color: #ffffff;
+    background-color: #070716; }
+    .section.section_black .section-name {
+      color: #212121;
+      background-color: #ffffff; }
+    .section.section_black .section-heading {
+      color: #ffffff; }
+    .section.section_black .section-subheading {
+      color: #ffffff; }

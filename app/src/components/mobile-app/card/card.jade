@@ -1,0 +1,4 @@
+mixin card(data)
+  .col-4
+    a(href=`${data.link}`).card(style=`background-image: url("${data.img}")`)
+      p.card__heading=`${data.heading}`

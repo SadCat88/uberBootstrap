@@ -1,14 +1,14 @@
-section.section.advantages
+section.section.section_white.advantages
   .container
-    .row
-      .section-name.section-name_black.offset-md-5.col-md-2.
+    .row.justify-content-center
+      .section-name.col-md-2.
         Преимущества
-    .row
-      .section-heading.section-heading_black.
+    .row.justify-content-center
+      .section-heading.
         8 причин начать работать с нами
 
     include ../item/item.jade
-    .row.item-w
+    .row.mb-4
       +item({
         img: "../../components/advantages/img/wallet.png",
         alt: "Кошелек",
@@ -23,7 +23,6 @@ section.section.advantages
         description: "У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!"
         })
 
-    .row.item-w
       +item({
         img: "../../components/advantages/img/money.png",
         alt: "Деньги",
@@ -38,7 +37,6 @@ section.section.advantages
         description: "Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни! "
         })
 
-    .row.item-w
       +item({
         img: "../../components/advantages/img/key.png",
         alt: "Замочный ключ",
@@ -53,7 +51,6 @@ section.section.advantages
         description: "Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить."
         })
 
-    .row.item-w
       +item({
         img: "../../components/advantages/img/phone.png",
         alt: "Телефон",
