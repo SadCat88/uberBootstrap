@@ -317,6 +317,83 @@
     }
 }
 
+.requirements {
+    .requirement {
+        width: 490px;
+        margin-bottom: 60px;
+
+        // blue theme
+        &.requirement_blue {
+            .requirement__heading {
+                color: $specialColorMain;
+            }
+
+            .requirement__description {
+                color: $specialColorMain;
+            }
+
+            .requirement-list__item {
+                .requirement-list__item-check {
+                    fill: $specialColorMain;
+                }
+            }
+        }
+
+        // orange theme
+        &.requirement_orange {
+            .requirement__heading {
+                color: $markerColor;
+            }
+
+            .requirement__description {
+                color: $markerColor;
+            }
+
+            .requirement-list__item {
+                .requirement-list__item-check {
+                    fill: $markerColor;
+                }
+            }
+        }
+
+        .requirement__heading {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .requirement-list {
+            margin-top: 10px;
+            padding-left: 40px;
+
+            font-size: 17px;
+
+            .requirement-list__item {
+                position: relative;
+
+                margin-bottom: 10px;
+
+                line-height: 24px;
+
+                .requirement-list__item-check {
+                    position: absolute;
+                    left: -30px;
+                    top: 2px;
+
+                    width: 20px;
+                    height: 20px;
+                }
+
+
+            }
+        }
+
+        .requirement__description {
+            font-size: 17px;
+            line-height: 24px;
+        }
+    }
+}
+
 .section {
     padding: 70px 0 40px 0;
 
