@@ -91,6 +91,7 @@
         text-align: center;
         font-size: 52px;
         font-weight: 900;
+        text-shadow: 1px 1px 6px rgb(0, 0, 0);
     }
 
     .promo__offer {
@@ -101,6 +102,7 @@
         font-size: 32px;
         line-height: 32px;
         font-weight: 700;
+        text-shadow: 1px 1px 6px rgb(0, 0, 0);
     }
 
     .promo__description {
@@ -109,6 +111,7 @@
         font-weight: normal;
         line-height: 1.33;
         text-align: center;
+        text-shadow: 1px 1px 6px rgb(0, 0, 0);
     }
 
     .promo__send-request {
@@ -174,12 +177,17 @@
         height: 280px;
         padding: 90px 20px 0;
         margin-bottom: 20px;
+        border-radius: 6px;
 
         background-position: center;
         background-repeat: no-repeat;
         background-size: center/cover;
         background-color: rgba(59, 59, 72, 0.9);
         background-blend-mode: multiply;
+
+        &:hover {
+            background-color: rgba(59, 59, 72, 0.7);
+        }
 
 
         .card__heading {
@@ -225,7 +233,89 @@
     }
 }
 
+.car-choice {
+    .car-banner {
+        position: relative;
 
+        padding-top: 45px;
+        margin-bottom: 350px;
+
+        .car-banner__text {
+            position: relative;
+            z-index: 1;
+
+            padding-bottom: 27px;
+            width: 100vw;
+
+            .car-banner__text-heading {
+
+                display: block;
+
+                font-size: 44px;
+                font-weight: 400;
+                text-align: center;
+            }
+
+            .car-banner__text-subheading {
+                display: block;
+
+                font-size: 16px;
+                color: $mainColor;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        // круг за автомобилем
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            transform: translate(-50%, -20px);
+
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+
+
+            background-color: $specialColorMain;
+        }
+
+        // автомобиль
+        .car-banner__img {
+            position: absolute;
+            z-index: 3;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        // пол для автомобиля
+        &::after {
+            content: "";
+
+            position: absolute;
+            z-index: 2;
+            top: 290px;
+            width: 100vw;
+            height: 350px;
+            background: linear-gradient(to bottom, transparentize($bgColor, 0.5), transparentize($specialColorMain, 0.8), #ffffff), #ffffff;
+        }
+
+    }
+
+    .car-choice__caption {
+        position: relative;
+        z-index: 4;
+
+        margin-bottom: 48px;
+
+        text-align: center;
+        color: $mainColor;
+        font-size: 17px;
+
+    }
+}
 
 .section {
     padding: 70px 0 40px 0;

@@ -100,20 +100,23 @@
     text-transform: uppercase;
     text-align: center;
     font-size: 52px;
-    font-weight: 900; }
+    font-weight: 900;
+    text-shadow: 1px 1px 6px black; }
   .promo .promo__offer {
     margin-bottom: 17px;
     text-transform: uppercase;
     text-align: center;
     font-size: 32px;
     line-height: 32px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: 1px 1px 6px black; }
   .promo .promo__description {
     margin-bottom: 170px;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.33;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 1px 1px 6px black; }
   .promo .promo__send-request {
     height: 60px;
     font-size: 17px; }
@@ -155,11 +158,14 @@
     height: 280px;
     padding: 90px 20px 0;
     margin-bottom: 20px;
+    border-radius: 6px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: center/cover;
     background-color: rgba(59, 59, 72, 0.9);
     background-blend-mode: multiply; }
+    .mobile-app .card:hover {
+      background-color: rgba(59, 59, 72, 0.7); }
     .mobile-app .card .card__heading {
       font-size: 24px;
       font-weight: normal;
@@ -187,6 +193,58 @@
         color: #1eacc7;
         font-size: 30px;
         font-weight: 400; }
+
+.car-choice .car-banner {
+  position: relative;
+  padding-top: 45px;
+  margin-bottom: 350px; }
+  .car-choice .car-banner .car-banner__text {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 27px;
+    width: 100vw; }
+    .car-choice .car-banner .car-banner__text .car-banner__text-heading {
+      display: block;
+      font-size: 44px;
+      font-weight: 400;
+      text-align: center; }
+    .car-choice .car-banner .car-banner__text .car-banner__text-subheading {
+      display: block;
+      font-size: 16px;
+      color: #212121;
+      text-align: center;
+      text-transform: uppercase; }
+  .car-choice .car-banner::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, -20px);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #1eacc7; }
+  .car-choice .car-banner .car-banner__img {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%); }
+  .car-choice .car-banner::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 290px;
+    width: 100vw;
+    height: 350px;
+    background: linear-gradient(to bottom, rgba(7, 7, 22, 0.5), rgba(30, 172, 199, 0.2), #ffffff), #ffffff; }
+
+.car-choice .car-choice__caption {
+  position: relative;
+  z-index: 4;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #212121;
+  font-size: 17px; }
 
 .section {
   padding: 70px 0 40px 0; }
