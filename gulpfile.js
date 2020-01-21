@@ -30,14 +30,14 @@ gulp.task("getdoc", function(cb) {
 
 // Section Dev ============================================================
 
-    gulp.task('server', function() {
-        // запуск локального сервера
-        browserSync({
-            server: {
-                baseDir: "app/dev"
-            }
-        });
+gulp.task('server', function() {
+    // запуск локального сервера
+    browserSync({
+        server: {
+            baseDir: "app/dev"
+        }
     });
+});
 
 gulp.task('copy-files', function() {
     // для переноса всех стандартных файлов из папки src в dev

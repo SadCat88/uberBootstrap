@@ -1,6 +1,86 @@
 @import '../../assets/scss/utils/vars.scss';
 @import '../../components/button/button.scss';
 
+.section {
+    padding: 70px 0 40px 0;
+
+    .section-name {
+        height: 24px;
+        margin-bottom: 30px;
+
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 25px;
+        text-transform: uppercase;
+        text-align: center;
+
+        border-radius: 4px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 17px;
+
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 38px;
+        font-weight: bold;
+
+
+    }
+
+    .section-subheading {
+        margin-top: -15px;
+        margin-bottom: 30px;
+
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center;
+
+
+    }
+
+    &.section_white {
+        color: $mainColor;
+
+        background-color: $secondColor;
+
+        .section-name {
+            color: $secondColor;
+
+            background-color: $mainColor;
+        }
+
+        .section-heading {
+            color: $mainColor;
+        }
+
+        .section-subheading {
+            color: $mainColor;
+        }
+    }
+
+    &.section_black {
+        color: $secondColor;
+
+        background-color: $bgColor;
+
+        .section-name {
+            color: $mainColor;
+
+            background-color: $secondColor;
+        }
+
+        .section-heading {
+            color: $secondColor;
+        }
+
+        .section-subheading {
+            color: $secondColor;
+        }
+    }
+}
+
 .header {
 
     .header-navigation {
@@ -245,7 +325,7 @@
             z-index: 1;
 
             padding-bottom: 27px;
-            width: 100vw;
+            width: 99vw;
 
             .car-banner__text-heading {
 
@@ -297,9 +377,17 @@
             position: absolute;
             z-index: 2;
             top: 290px;
-            width: 100vw;
+
+            width: 99vw;
             height: 350px;
-            background: linear-gradient(to bottom, transparentize($bgColor, 0.5), transparentize($specialColorMain, 0.8), #ffffff), #ffffff;
+
+            background:
+                linear-gradient(to bottom,
+                    transparentize($bgColor, 0.5),
+                    transparentize($specialColorMain, 0.8),
+                    #ffffff),
+                #ffffff;
+            box-shadow: 0 2px 0 2px white;
         }
 
     }
@@ -394,97 +482,216 @@
     }
 }
 
-.section {
-    padding: 70px 0 40px 0;
+.map {
+    position: relative;
+    background-color: none;
+    height: 717px;
 
-    .section-name {
-        height: 24px;
-        margin-bottom: 30px;
-
-        font-size: 11px;
-        font-weight: 400;
-        line-height: 25px;
-        text-transform: uppercase;
-        text-align: center;
-
-        border-radius: 4px;
-    }
+    background: url("../../components/map/img/map.jpg") center (center/cover) no-repeat;
 
 
-    .section-heading {
-        margin-bottom: 17px;
+    .map__link {
+        position: absolute;
+        z-index: 4;
+        bottom: 70px;
+
+        display: block;
 
         text-transform: uppercase;
         text-align: center;
-        font-size: 38px;
-        font-weight: bold;
-
-
-    }
-
-    .section-subheading {
-        margin-top: -15px;
-        margin-bottom: 30px;
-
-        font-size: 17px;
+        color: $specialColorMain;
+        font-size: 15px;
         font-weight: normal;
-        text-align: center;
 
-
-    }
-
-    &.section_white {
-        color: $mainColor;
-
-        background-color: $secondColor;
-
-        .section-name {
-            color: $secondColor;
-
-            background-color: $mainColor;
-        }
-
-        .section-heading {
-            color: $mainColor;
-        }
-
-        .section-subheading {
-            color: $mainColor;
-        }
-    }
-
-    &.section_black {
-        color: $secondColor;
-
-        background-color: $bgColor;
-
-        .section-name {
-            color: $mainColor;
-
-            background-color: $secondColor;
-        }
-
-        .section-heading {
-            color: $secondColor;
-        }
-
-        .section-subheading {
+        &:hover {
             color: $secondColor;
         }
     }
 }
 
-// .container {
+.footer {
+    padding: 50px 15px 0;
+    display: flex;
+    justify-content: space-between;
 
-//     background-color: rgb(224, 131, 131);
+    .social {
+        width: 302px;
 
-//     .row {
+        .social-list {
+            display: flex;
 
-//         background-color: rgb(153, 224, 131);
+            .social-list__item {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
 
-//         [class|="col"] {
-//             outline: 1px dashed blue;
-//             outline-offset: -1px;
-//         }
-//     }
-// }
+                .social__item-link {
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+
+                    font-size: 0;
+
+                    border-radius: 50%;
+
+                    &:hover {
+                        box-shadow: 0 0 2px 3px $specialColorMain;
+                    }
+
+                    &.facebook {
+                        background:
+                            url("../../components/footer/img/soc-fcbk.png") center center no-repeat,
+                            $bgColor;
+                    }
+
+                    &.twitter {
+                        background:
+                            url("../../components/footer/img/soc-twtr.png") center center no-repeat,
+                            $bgColor;
+                    }
+
+                    &.linkedin {
+                        background:
+                            url("../../components/footer/img/soc-lnkdn.png") center center no-repeat,
+                            $bgColor;
+                    }
+
+                    &.instagram {
+                        background:
+                            url("../../components/footer/img/soc-instgrm.png") center center no-repeat,
+                            $bgColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-navigation {
+        position: relative;
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translate(-50%);
+
+            width: 300px;
+            height: 4px;
+
+            background-color: $specialColorMain;
+        }
+
+        .footer-main-menu {
+            display: flex;
+            justify-content: center;
+
+            font-size: 15px;
+            font-weight: 300;
+            text-transform: uppercase;
+
+
+            .footer-main-menu__item {
+
+                .footer-main-menu__item-link {
+                    display: block;
+                    padding: 0 25px 5px;
+                    color: $mainColor;
+
+                    &:hover {
+                        color: $specialColorMain;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .footer-sub-menu {
+            display: flex;
+            justify-content: center;
+
+            font-size: 11px;
+            font-weight: 300;
+            text-transform: uppercase;
+
+
+            .footer-sub-menu__item {
+
+                .footer-sub-menu__item-link {
+                    display: block;
+                    padding: 0 10px 15px;
+                    color: $opacityText;
+
+                    &:hover {
+                        color: $specialColorMain;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .language {
+            display: flex;
+            justify-content: center;
+
+            font-size: 11px;
+            font-weight: 400;
+            text-transform: uppercase;
+
+
+            .language-link {
+                display: block;
+                padding: 0 10px;
+
+                color: $specialColorMain;
+
+                &:hover {
+                    color: $mainColor;
+                    text-decoration: underline;
+                }
+
+            }
+        }
+    }
+
+    .app-install {
+        width: 302px;
+
+        .app-install-list {
+            display: flex;
+            justify-content: flex-end;
+
+            .app-install-list__item {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                .app-install-list__item-link {
+                    display: block;
+                    width: 94px;
+                    height: 26px;
+                    border-radius: 4px;
+
+                    font-size: 0;
+
+                    &:hover {
+                        box-shadow: 0 0 2px 3px $specialColorMain;
+                    }
+
+                    &.apple {
+                        background: url("../../components/footer/img/app-install__apple.png") center center no-repeat;
+                    }
+
+                    &.google {
+                        background: url("../../components/footer/img/app-install__google.png") center center no-repeat;
+                    }
+
+                    &.windows {
+                        background: url("../../components/footer/img/app-install__windows.png") center center no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

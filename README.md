@@ -15,6 +15,9 @@ https://sadcat88.github.io/uberBootstrap/app/public/<br>
 - Bootstrap
 - Git (спасибо, Кэп)
 
+Данный проект не является адаптивным.<br>
+Здесь я учился комбинировать сетку Bootstrap и микросетку на flex, для достижения pixelperfect.
+
 <!-- **JSDoc**<br>
 Доступна документация по некоторым JavaScript методам<br>
 https://sadcat88.github.io/uberBootstrap/docs/gen/index.html
